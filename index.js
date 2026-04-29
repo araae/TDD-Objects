@@ -1,3 +1,4 @@
+//1
 /**
  * @typedef {{cohort: number, name: string}} Student
  * @param {Student} student
@@ -11,9 +12,11 @@
  * getCohort({cohort: 3476, name: "Charlie"}); // 3476
  */
 export function getCohort(student) {
-  // TODO
+  // get the cohort from the student
+  return student.cohort;
 }
 
+//2
 /**
  * @typedef {{cohort: number, name: string}} Student
  * Hint: comparison operators (e.g. <, <=, >, >=) work on strings!
@@ -33,6 +36,7 @@ export function sortStudents(studentA, studentB) {
   // TODO
 }
 
+//3
 /**
  * @typedef {{color: string, icon: string}} Flag
  * @param {string} color
@@ -50,6 +54,7 @@ export function makeFlag(color, icon) {
   // TODO
 }
 
+//4
 /**
  * @typedef {{value: number}} Count
  * @param {Count} count
@@ -66,6 +71,7 @@ export function increment(count) {
   // TODO
 }
 
+//5
 /**
  * @typedef {{x: number, y: number}} Location
  *
@@ -93,6 +99,7 @@ export function getTaxicabDistance(from, to) {
   // TODO
 }
 
+//6
 /**
  * @typedef {{name: string, isHerbivore: boolean}} Animal
  * @param {Animal[]} animals
@@ -109,6 +116,7 @@ export function getHerbivores(animals) {
   // TODO
 }
 
+//7
 /**
  * @typedef {{name: string, isCarnivore: boolean}} Animal
  * @param {Animal[]} animals
@@ -125,6 +133,7 @@ export function getCarnivoreNames(animals) {
   // TODO
 }
 
+//8
 /**
  * @typedef {{name: string, quantity: number, price: number}} Item
  *
@@ -146,6 +155,7 @@ export function getTotalCost(cart) {
   // TODO
 }
 
+//9
 /**
  * Zip is an operation that merges two arrays into a single object.
  * You can assume that the two input arrays have the same length.
@@ -166,6 +176,7 @@ export function zip(keys, values) {
   // TODO
 }
 
+//10
 /**
  * @param {string} word
  * @returns {{[character: string]: number}} an object where each key is a character
