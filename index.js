@@ -118,8 +118,16 @@ export function getTaxicabDistance(from, to) {
  * getHerbivores([{name: "Rabbit", isHerbivore: true}]); // [{name: "Rabbit", isHerbivore: true}]
  */
 export function getHerbivores(animals) {
-  // TODO
+  //return the animals that are herbivores
+  return animals.filter((animal) => animal.isHerbivore);
 }
+//i originally went with but after searching i like the line above more
+// const result = [];
+//  for (const animal of animals) {
+//    if (animal.isCarnivore) result.push(animal.name);
+//  }
+//  return result;
+// }
 
 //7
 /**
