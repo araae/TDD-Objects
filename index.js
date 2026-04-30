@@ -100,7 +100,8 @@ export function increment(count) {
  *
  */
 export function getTaxicabDistance(from, to) {
-  // TODO
+  //sum the absolute differences of the x and y coordinates
+  return Math.abs(from.x - to.x) + Math.abs(from.y - to.y);
 }
 
 //6
