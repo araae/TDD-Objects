@@ -122,7 +122,7 @@ export function getHerbivores(animals) {
   return animals.filter((animal) => animal.isHerbivore);
 }
 
-//i originally went with but after searching i like the line below more
+//i originally went with but after searching i like the line below more, same with 6
 // const result = [];
 //  for (const animal of animals) {
 //    if (animal.isCarnivore) result.push(animal.name);
@@ -167,7 +167,8 @@ export function getCarnivoreNames(animals) {
  * getTotalCost([{name: "Notebook", quantity: 0, price: 5}]); // 0
  */
 export function getTotalCost(cart) {
-  // TODO
+  //add up the cost of every item in the cart
+  return cart.reduce((total, item) => total + item.quantity * item.price, 0);
 }
 
 //9
@@ -188,7 +189,7 @@ export function getTotalCost(cart) {
  * zip(["x"], ["x"]); // {x: "x"}
  */
 export function zip(keys, values) {
-  // TODO
+  //combine two arrays
 }
 
 //10
@@ -205,5 +206,5 @@ export function zip(keys, values) {
  * countCharacters("aAa"); // {a: 2, A: 1}
  */
 export function countCharacters(word) {
-  // TODO
+  //im having some problems with the last 2
 }
