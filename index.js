@@ -33,8 +33,10 @@ export function getCohort(student) {
  * sortStudents({cohort: 1, name: "Alice"}, {cohort: 2, name: "Alice"}); // {cohort: 1, name: "Alice"}
  */
 export function sortStudents(studentA, studentB) {
-  // TODO
+  // compare if both students have the same name or not
+  return studentA.name <= studentB.name ? studentA : studentB;
 }
+//im trying to learn the shortest way to code, so i look up these a lot
 
 //3
 /**
@@ -51,7 +53,8 @@ export function sortStudents(studentA, studentB) {
  * makeFlag("yellow", "triangle"); // { color: "yellow", icon: "triangle" }
  */
 export function makeFlag(color, icon) {
-  // TODO
+  //build a flag from the color and icon
+  return { color, icon };
 }
 
 //4
