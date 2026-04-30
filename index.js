@@ -121,7 +121,8 @@ export function getHerbivores(animals) {
   //return the animals that are herbivores
   return animals.filter((animal) => animal.isHerbivore);
 }
-//i originally went with but after searching i like the line above more
+
+//i originally went with but after searching i like the line below more
 // const result = [];
 //  for (const animal of animals) {
 //    if (animal.isCarnivore) result.push(animal.name);
@@ -143,7 +144,8 @@ export function getHerbivores(animals) {
  * getCarnivoreNames([{name: "Wolf", isCarnivore: true}]); // ["Wolf"]
  */
 export function getCarnivoreNames(animals) {
-  // TODO
+  //return the names of the carnivores
+  return animals.filter((a) => a.isCarnivore).map((a) => a.name);
 }
 
 //8
